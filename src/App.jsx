@@ -1,14 +1,20 @@
-import { Button } from "./components/ui/button";
+import { Route, Routes } from "react-router-dom";
+import { Header } from "./components/Header";
+import NotFoundPage from "./pages/NotFoundPage";
+import HomePage from "./pages/HomePage";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <>
-      <main>
-        <div>
-          <h1 className="text-3xl font-bold underline">Hello world!</h1>
-          <Button>OK</Button>
-        </div>
-      </main>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+
+      <Footer />
     </>
   );
 }
