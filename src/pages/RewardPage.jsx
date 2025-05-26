@@ -117,7 +117,7 @@ const RewardPage = () => {
           </section>
           {/* Promo Terbaru Section End */}
 
-          {/* Download App Section */}
+          {/* Download App Section Start */}
           <section className="bg-[#c09999] text-[#693D3D] p-6 rounded-lg">
             <div className="text-center mb-6">
               <h2 className="text-xl font-bold mb-2">
@@ -141,6 +141,7 @@ const RewardPage = () => {
               </div>
             </div>
           </section>
+          {/* Download App Section End */}
         </div>
       </section>
     </main>
