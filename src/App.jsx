@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import RewardPage from "./pages/RewardPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import MenuPage from "./pages/MenuPage";
+import OrderPage from "./pages/OrderPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/reward" element={<RewardPage />} />
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/menu" element={<MenuPage />} />
+        <Route path="/order" element={<OrderPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
