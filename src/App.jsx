@@ -6,6 +6,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import HomePage from "./pages/HomePage";
 import RewardPage from "./pages/RewardPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import MenuPage from "./pages/MenuPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/reward" element={<RewardPage />} />
         <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/menu" element={<MenuPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
